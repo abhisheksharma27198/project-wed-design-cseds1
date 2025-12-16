@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SmartMart</title>
+
+    <!-- INTERNAL CSS -->
+    <style>
+        /* External-style CSS using classes */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #1abc9c;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #16a085;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .products {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: white;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+            padding: 15px;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .price {
+            color: green;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #1abc9c;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            margin-top: 20px;
+        }
+        button{
+            width:500px;
+            justify-content:center;
+            margin-left:400px;
+            margin-top:10px;
+            padding:10px;
+            background-color: #1abc9c;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- INLINE CSS USED HERE -->
+    <header style="letter-spacing:2px;">
+        <h1>SmartMart</h1>
+        <p>Your Smart Online Store</p>
+    </header>
+
+    <nav>
+        <a href="buynow.html">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Offers</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h2 style="text-align:center;">Featured Products</h2>
+
+        <div class="products">
+
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdjj5yG4HnU33L8vASWxWySHWo7tSJ8Qdq8w&s" alt="Groceries">
+                <h3>Groceries</h3>
+                <p>Fresh daily essentials</p>
+                <p class="price">₹499</p>
+            </div>
+
+            <!--<div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFmPH8j4M-6eCog9k5TDLMP5KiMxKx-3MTtw&s" alt="Electronics">
+                <h3>Electronics</h3>
+                <p>Latest gadgets</p>
+                <p class="price">₹9,999</p>
+            </div>
+
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTl6ZRy8Amx5YCQ6uJm8BBM0ST1iLLKbY-pA&s" alt="Fashion">
+                <h3>Fashion</h3>
+                <p>Trending clothes</p>
+                <p class="price">₹1,299</p>
+            </div>-->
+            
+
+        </div>
+        <button>Buynow</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 SmartMart | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
