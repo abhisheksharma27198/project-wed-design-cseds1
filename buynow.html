@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Cart - Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f8;
+        }
+
+        /* Header */
+        header {
+            background-color: #1e88e5;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 32px;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        /* Banner */
+        .banner {
+            background-color:orange;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .banner h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        /* Categories */
+        .container {
+            width: 90%;
+            margin: 40px auto;
+        }
+
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            margin: 15px 0 10px;
+            color: #333;
+            margin-top:5px;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1e88e5;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Smart Mart</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Cart</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h2>Welcome to Smart Mart</h2>
+        <p>Your one-stop online shopping solution</p>
+    </section>
+
+    <div class="container">
+        <h2 style="text-align:center; margin-bottom:20px;">Shop by Category</h2>
+        <div class="categories">
+
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3768my_4vFl-v2Jl_Wmjh6bJgiKcr2uPM5Q&s" alt="Groceries">
+                <h3>Chocolates</h3>
+                <p>Fresh chocolates and sweets</p>
+                <p class="price"> in just₹299</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcazggSQU7mei-Ya3gx5ctmJADe-vPuTxDsQ&s" alt="Groceries">
+                <h3>Oil Cans</h3>
+                <p>Saffola gold </p>
+                <p>Health Concious and support heart health</p>
+                <p class="price">₹499</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="https://www.jeyashriskitchen.com/wp-content/uploads/2019/07/Indian-Grocery-List.jpg" alt="Groceries">
+                <h3>Pulses and grains</h3>
+                <p>Different types of pulses and grains</p>
+                <p class="price">₹599</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdjj5yG4HnU33L8vASWxWySHWo7tSJ8Qdq8w&s" alt="Groceries">
+                <h3>household needs</h3>
+                <p>All types of household supplies</p>
+                <p class="price">₹499</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="https://content.jdmagicbox.com/comp/solapur/w2/9999px217.x217.130429185309.q5w2/catalogue/bhakalo-fruits-and-vegetables-solapur-ho-solapur-onion-wholesalers-de98u.jpg" alt="Radio">
+                <h3>Fresh vegetables</h3>
+                <p>Fresh vegetables and fruits</p>
+                <p class="price">upto 40% off</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="https://png.pngtree.com/png-clipart/20241109/original/pngtree-beautiful-various-fruits-item-and-healthy-clipart-png-image_16788969.png" alt="Groceries">
+                <h3>Fruits</h3>
+                <p>Fresh & exotic fruits</p>
+                <p class="price">upto 30% off</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="https://herbalstrategi.com/cdn/shop/products/Natural-Cleaning-Products-_Pack-of-7.jpg?v=1652169077&width=1214" alt="Groceries">
+                <h3>Floor Cleaning Products</h3>
+                <p>Available in different fragrances</p>
+                <p>Disinfectant and deodorizing</p>
+                <p class="price">₹499</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="https://content.jdmagicbox.com/v2/comp/delhi/q2/011pxx11.xx11.181106113639.z6q2/catalogue/breadtalk-saket-delhi-bakeries-inumnpdmwv.jpg" alt="Groceries">
+                <h3>Breads</h3>
+                <p>All types of breads including multigrain and fibre </p>
+                <p class="price">₹499</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="card">
+                
+                <h3>Ice-Cream</h3>
+                <p>All flavours are available</p>
+                <p class="price">₹100</p>
+                <button>Add to cart</button>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT_PKwYFtoGm131yiPpnLpnEF1cPqF2cRhkmdlg9K1xZ4KulWS5TcpUVejw-f-PbHniZtrKfvNglON4XJ1GlO-hwPTh_ZlJ3pEvJEAlbQ_WJAHL0WLQtJjZ" alt="Groceries">
+                <h3>Macan Nuggets</h3>
+                <p>tasty and delicious</p>
+                <p class="price">₹245</p>
+                <button>Add to cart</button>
+            </div>
+            <div class="card">
+                
+                <p class="price">₹499</p>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdjj5yG4HnU33L8vASWxWySHWo7tSJ8Qdq8w&s" alt="Groceries">
+                <h3>Groceries</h3>
+                <p>Fresh daily essentials</p>
+                <p class="price">₹499</p>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Smart Cart | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
